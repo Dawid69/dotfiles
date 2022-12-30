@@ -1,0 +1,10 @@
+# see man 5 mako for extra config values...
+background-color=#30303050
+border-color=#60606050
+border-radius=10
+width=200
+
+max-visible=3
+
+icons=1
+default-timeout=3500
