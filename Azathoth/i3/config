@@ -1,0 +1,344 @@
+set $mod Mod4
+
+new_window pixel 0
+new_float normal
+
+default_border none
+hide_edge_borders both
+bindsym $mod+u border none 
+bindsym $mod+y border normal
+
+
+######################################################################################
+#Apps that should launch at start
+
+# execute conky at startup 
+exec --no-startup-id conky & 
+
+# execute picom..
+exec_always --no-startup-id picom -b --blur-background --config ~/.config/picom/picom.conf &
+
+# Execute Authentication agent
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+exec dunst -config ~/.config/dunst/dunstrc
+
+#execute the xscreensaver daemon 
+exec_always xscreensaver -no-splash
+
+#Wallpaper and blur a bit
+exec --no-startup-id nitrogen --set-zoom-fill --random /home/dawid/Pictures/Wallpapers/used/ --save
+
+#Always Launch
+# Launch Polybar
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+
+######################################################################################
+
+
+font xft:Hack:style=Regular 7
+
+floating_modifier $mod
+
+#Keybind to start terminal
+bindsym $mod+Tab exec alacritty
+bindsym Menu exec alacritty
+
+# Window kill command
+bindsym $mod+q kill
+
+# start program launcher rofi
+bindsym $mod+d exec --no-startup-id rofi -show drun
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# workspace back and forth (with/without active container)
+workspace_auto_back_and_forth no
+bindsym $mod+b workspace back_and_forth
+bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
+
+# split orientation
+bindsym $mod+n split h;exec notify-send 'tile horizontally'
+bindsym $mod+v split v;exec notify-send 'tile vertically'
+
+# toggle fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking;exec notify-send 'Stacking'
+bindsym $mod+w layout tabbed;exec notify-send 'Tabbed'
+bindsym $mod+e layout toggle split;exec notify-send 'Split'
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# toggle sticky
+#bindsym $mod+Shift+s sticky toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
+# navigate workspaces next / previous
+bindsym $mod+Ctrl+Right workspace next
+bindsym $mod+Ctrl+Left workspace prev
+
+bindsym $mod+Ctrl+h workspace prev
+bindsym $mod+Ctrl+l workspace next
+
+###############################################################################
+#Set the names of workspaces
+
+set $ws0 "0:烈"
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:3."
+set $ws4 "4:4."
+set $ws5 "5:5."
+set $ws6 "6:6."
+set $ws7 "7:"
+set $ws8 "8:"
+set $ws9 "9:靈"
+set $ws10 "10:"
+
+# switch to workspace
+bindsym $mod+grave workspace $ws0
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+
+# move focused container to workspace
+bindsym $mod+Shift+grave move container to workspace $ws0
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+
+
+###############################################################################
+# Open specific applications in floating mode
+for_window [title="alsamixer"] floating enable border pixel 1
+for_window [class="Clipgrab"] floating enable
+for_window [title="File Transfer*"] floating enable
+for_window [class="GParted"] floating enable border normal
+for_window [class="Lightdm-gtk-greeter-settings"] floating enable
+for_window [class="Lxappearance"] floating enable sticky enable border normal
+for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Pavucontrol"] floating enable
+for_window [class="qt5ct"] floating enable sticky enable border normal
+for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
+for_window [class="Simple-scan"] floating enable border normal
+for_window [class="Conky"] floating enable
+######################################################################################
+
+######################################################################################
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+######################################################################################
+#poweroff logoff etc commands
+
+
+#Rofi power menu.
+
+bindsym $mod+Shift+e exec rofi -show Power -modi Power:~/.config/rofi/powerMenu.sh  -lines 4 -width 17
+
+#Locking script
+
+bindsym $mod+Shift+l exec --no-startup-id i3lock-fancy-rapid 5 3 -e 
+
+######################################################################################
+
+# Resize window (you can also use the mouse for that)
+bindsym $mod+r mode "resize"
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 5 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 20 px or 20 ppt
+        bindsym Down resize grow height 20 px or 20 ppt
+        bindsym Up resize shrink height 20 px or 20 ppt
+        bindsym Right resize grow width 20 px or 20 ppt
+
+        # exit resize mode: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+
+
+# theme colors
+
+
+set $dark_black = #000000
+set $black  = #565f89
+set $white  = #c0caf5
+set $red    = #f7768e
+set $orange = #ffa86f
+set $yellow = #e0af68
+set $green  = #9ece6a
+set $blue   = #88afff
+set $cyan   = #2ac3de
+set $purple = #c3a4f8
+
+
+
+set $text-color          #16161e
+
+# set window colors
+# class                 border          background      text                 indicator
+client.focused          $blue           $black           $white               $blue
+client.unfocused        $blue           $black           $white               $blue
+client.focused_inactive $blue           $black           $white               $blue
+client.urgent           $red            $red            $blue
+
+client.background       $blue
+
+
+bar {
+        font xft:Fira Code:style=Bold 10
+        position top 
+        status_command i3status-rs
+        strip_workspace_numbers true
+        
+        tray_padding 3
+        # height 2
+
+        colors {
+	                	# whole color settings
+                		background   #1a1b25aa
+                		statusline   $white
+	                	separator    $black
+
+                		# type             background  font             border  
+	                	focused_workspace  $blue        #000000         #565f89
+                		active_workspace   $cyan       #000000          #565f89
+	                	inactive_workspace $cyan      #000000           #565f89
+                		urgent_workspace   $red         $red            #565f89
+	}
+}
+
+
+
+
+# Gaps
+gaps inner 10
+gaps outer -4
+
+smart_gaps on
+
+# Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. 
+# Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace).
+# If you also press Shift with these keys, the change will be global for all workspaces.
+
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+
+#use xprop to find the class of the program you want to force open on a workspace
+
+#Assign Firefox
+assign [class="firefox"] $ws10
+
+#assign Steam
+assign [class = "Steam"] $ws0
+
+# screenshot command
+bindsym Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+bindsym Ctrl + Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+
+# volume controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo  +2% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo  -2% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle # mute sound
+
+# Media Controls
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause | notify-send "PlayPause"
+bindsym XF86AudioStop exec --no-startup-id playerctl stop | notify-send "Media Stop"
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous | notify-send "Media Prev"
+bindsym XF86AudioNext exec --no-startup-id playerctl next | notify-send "Media Next"
+
