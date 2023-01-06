@@ -106,7 +106,7 @@ local config = {
       ensure_installed = { "lua" },
     },
     ["nvim-lsp-installer"] = {
-      ensure_installed = { "sumneko_lua" },
+      ensure_installed = { "rust_analyzer" },
     },
     packer = {
       compile_path = vim.fn.stdpath "config" .. "/lua/packer_compiled.lua",
@@ -155,13 +155,8 @@ local config = {
 
   -- Extend LSP configuration
   lsp = {
-
-
-
     -- enable servers that you already have installed without lsp-installer
     servers = {
-
-
       -- "pyright"
     },
     -- add to the server on_attach function
