@@ -42,8 +42,8 @@ font xft:Hack:style=Regular 7
 floating_modifier $mod
 
 #Keybind to start terminal
-bindsym $mod+Tab exec alacritty
-bindsym Menu exec alacritty
+bindsym $mod+Tab exec wezterm
+bindsym Menu exec wezterm
 
 # Window kill command
 bindsym $mod+q kill
