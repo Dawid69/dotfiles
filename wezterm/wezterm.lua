@@ -13,7 +13,7 @@ return {
   -- Set up new keybinds... Going to set it up as a browser..
   keys = {
     { key = "Tab", mods = 'CTRL', action = wezterm.action.SpawnWindow },
-    { key = "b", mods = 'CTRL', action = wezterm.action.ActivateTabRelative },
+    -- { key = "b", mods = 'CTRL', action = wezterm.action.ActivateTabRelative },
   },
 
 }
