@@ -62,7 +62,7 @@ local config = {
     init = {
 
 
-{ "folke/tokyonight.nvim"},
+      { "folke/tokyonight.nvim" },
 
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
