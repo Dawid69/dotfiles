@@ -8,44 +8,9 @@ local config = {
     opt = {
       relativenumber = false, -- sets vim.opt.relativenumber
     },
+    -- Means pressing space opens up the context menu...
     g = {
       mapleader = " ", -- sets vim.g.mapleader
-    },
-  },
-
-
-  -- Default theme configuration
-  default_theme = {
-    diagnostics_style = { italic = true },
-    -- Modify the color table
-    colors = {
-      fg = "#abb2bf",
-    },
-    -- Modify the highlight groups
-    highlights = function(highlights)
-      local C = require "default_theme.colors"
-
-      highlights.Normal = { fg = C.fg, bg = C.bg }
-      return highlights
-    end,
-    plugins = { -- enable or disable extra plugin highlighting
-      aerial = true,
-      beacon = false,
-      bufferline = true,
-      dashboard = true,
-      highlighturl = true,
-      hop = false,
-      indent_blankline = true,
-      lightspeed = false,
-      ["neo-tree"] = true,
-      notify = true,
-      ["nvim-tree"] = false,
-      ["nvim-web-devicons"] = true,
-      rainbow = true,
-      symbols_outline = false,
-      telescope = true,
-      vimwiki = false,
-      ["which-key"] = true,
     },
   },
 
@@ -59,23 +24,18 @@ local config = {
   plugins = {
     -- Add plugins, the packer syntax without the "use"
 
-    init = {
 
+    -- Debug adapter for rust
+    ["mason-nvim-dap"] = {
+      ensure_installed = { "codelldb" },
+    },
+
+
+
+    init = {
 
       { "folke/tokyonight.nvim" },
 
-      -- You can disable default plugins as follows:
-      -- ["goolord/alpha-nvim"] = { disable = true },
-
-      -- You can also add new plugins here as well:
-      -- { "andweeb/presence.nvim" },
-      -- {
-      --   "ray-x/lsp_signature.nvim",
-      --   event = "BufRead",
-      --   config = function()
-      --     require("lsp_signature").setup()
-      --   end,
-      -- },
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
@@ -102,6 +62,7 @@ local config = {
       end
       return config -- return final config table
     end,
+
     treesitter = {
       ensure_installed = { "lua" },
     },
@@ -132,7 +93,7 @@ local config = {
         -- second key is the prefix, <leader> prefixes
         ["<leader>"] = {
           -- which-key registration table for normal mode, leader prefix
-          -- ["N"] = { "<cmd>tabnew<cr>", "New Buffer" },
+          -- ["n"] = { "<cmd>tabnew<cr>", "New Buffer" },
         },
       },
     },
@@ -194,9 +155,16 @@ local config = {
     underline = true,
   },
 
+
+  header = {
+    "Neovim"
+  },
+
+
   -- This function is run last
   -- good place to configure mappings and vim options
   polish = function()
+
     -- Set key bindings
     vim.keymap.set("n", "<C-s>", ":w!<CR>")
 
