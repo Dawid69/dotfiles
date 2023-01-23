@@ -14,40 +14,6 @@ local config = {
     },
   },
 
-  -- Default theme configuration
-  default_theme = {
-    diagnostics_style = { italic = true },
-    -- Modify the color table
-    colors = {
-      fg = "#abb2bf",
-    },
-    -- Modify the highlight groups
-    highlights = function(highlights)
-      local C = require "default_theme.colors"
-
-      highlights.Normal = { fg = C.fg, bg = C.bg }
-      return highlights
-    end,
-    plugins = { -- enable or disable extra plugin highlighting
-      aerial = true,
-      beacon = false,
-      bufferline = true,
-      dashboard = true,
-      highlighturl = true,
-      hop = false,
-      indent_blankline = true,
-      lightspeed = false,
-      ["neo-tree"] = true,
-      notify = true,
-      ["nvim-tree"] = false,
-      ["nvim-web-devicons"] = true,
-      rainbow = true,
-      symbols_outline = false,
-      telescope = true,
-      vimwiki = false,
-      ["which-key"] = true,
-    },
-  },
 
   -- Disable AstroNvim ui features
   ui = {
@@ -59,47 +25,47 @@ local config = {
   plugins = {
     -- Add plugins, the packer syntax without the "use"
 
+
+
+    -- Debug adapter for rust
+    ["mason-nvim-dap"] = {
+      ensure_installed = { "codelldb" },
+    },
+
+
+
+
+
     init = {
-    {"folke/tokyonight.nvim"},
-    {
-      "epwalsh/obsidian.nvim",
-      config = function()
-        require("obsidian").setup{
-          dir = "~/Documents/Obsidian/RicSys",
-          completion = {
-            nvim_cmp = true,
+      { "folke/tokyonight.nvim" },
+      {
+        "epwalsh/obsidian.nvim",
+        config = function()
+          require("obsidian").setup {
+            dir = "~/Documents/Obsidian/RicSys",
+            completion = {
+              nvim_cmp = true,
+            }
           }
-        }
-    end
-    },
-{
-  --- Zenmode for editing
-  "folke/zen-mode.nvim",
-  config = function()
-    require("zen-mode").setup {
-      window = {
-        backdrop = 0.9,
-        width = 0.85,
+        end
       },
-    }
+      {
+        --- Zenmode for editing
+        "folke/zen-mode.nvim",
+        config = function()
+          require("zen-mode").setup {
+            window = {
+              backdrop = 0.9,
+              width = 0.85,
+            },
+          }
 
-  end
-},
- 
+        end
+      },
 
-      -- You can disable default plugins as follows:
-      -- ["goolord/alpha-nvim"] = { disable = true },
-
-      -- You can also add new plugins here as well:
-      -- { "andweeb/presence.nvim" },
-      -- {
-      --   "ray-x/lsp_signature.nvim",
-      --   event = "BufRead",
-      --   config = function()
-      --     require("lsp_signature").setup()
-      --   end,
-      -- },
     },
+
+
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
       local null_ls = require "null-ls"
@@ -125,6 +91,8 @@ local config = {
       end
       return config -- return final config table
     end,
+
+
     treesitter = {
       ensure_installed = { "lua" },
     },
@@ -194,7 +162,7 @@ local config = {
     -- Add overrides for LSP server settings, the keys are the name of the server
     ["server-settings"] = {
       arduino_language_server = {
-        cmd ={
+        cmd = {
           "/home/dawid/.local/share/nvim/lsp_servers/arduino_language_server/arduino-language-server",
           -- "-clangd", "/usr/bin/clangd",
           -- "-cli", "/usr/bin/arduino-cli",
@@ -209,7 +177,7 @@ local config = {
       --     "--query-driver=/bin/arm-none-eabi-*",
       --   }
       -- }
-      
+
       -- example for addings schemas to yamlls
       -- yamlls = {
       --   settings = {
@@ -230,6 +198,12 @@ local config = {
     virtual_text = true,
     underline = true,
   },
+
+
+  header = {
+    "Neovim"
+  },
+
 
   -- This function is run last
   -- good place to configure mappings and vim options

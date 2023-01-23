@@ -37,6 +37,8 @@ local config = {
       { "folke/tokyonight.nvim" },
 
     },
+
+
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
       local null_ls = require "null-ls"
