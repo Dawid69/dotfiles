@@ -30,16 +30,6 @@ local config = {
     },
 
     init = {
-      --
-      --
-      -- {
-      --   "gorbit99/codewindow.nvim",
-      --   config = function()
-      --     local codewindow = require('codewindow')
-      --     codewindow.setup()
-      --     codewindow.apply_default_keybinds()
-      --   end,}
-      --
 
       { "folke/tokyonight.nvim" },
       {
