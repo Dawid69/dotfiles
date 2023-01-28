@@ -23,18 +23,11 @@ local config = {
 
   -- Configure plugins
   plugins = {
-    -- Add plugins, the packer syntax without the "use"
-
-
 
     -- Debug adapter for rust
     ["mason-nvim-dap"] = {
       ensure_installed = { "codelldb" },
     },
-
-
-
-
 
     init = {
       { "folke/tokyonight.nvim" },
@@ -98,7 +91,6 @@ local config = {
         end,
       },
     },
-
 
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
@@ -233,12 +225,15 @@ local config = {
     virtual_text = true,
     underline = true,
   },
-
-
   header = {
-    "Neovim"
-  },
 
+
+    " ███    ██ ██████  ██████  ██    ██ ██ ███    ███ ",
+    " ████   ██ ██     ██    ██ ██    ██ ██ ████  ████ ",
+    " ██ ██  ██ ████   ██    ██ ██    ██ ██ ██ ████ ██ ",
+    " ██  ██ ██ ██     ██    ██  ██  ██  ██ ██  ██  ██ ",
+    " ██   ████ ██████  ██████    ████   ██ ██      ██ ",
+  },
 
   -- This function is run last
   -- good place to configure mappings and vim options
