@@ -5,7 +5,6 @@ add_newline = true
 show_milliseconds = true
 
 
-
 [aws]
 symbol = "  "
 

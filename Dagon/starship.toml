@@ -22,13 +22,11 @@ show_milliseconds = true
 
 
 
-
 [c]
 symbol = "C "
 
 [cmake]
 symbol = "cmake "
-
 
 [directory]
 read_only = " root"
