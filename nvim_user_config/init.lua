@@ -30,7 +30,7 @@ local config = {
     },
 
     init = {
-
+      { "wfxr/minimap.vim" },
       { "folke/tokyonight.nvim" },
       {
         "epwalsh/obsidian.nvim",
