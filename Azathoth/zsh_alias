@@ -33,7 +33,6 @@ alias nvf='nvim $(fd . --hidden --type file -E '.local/' -E 'Documents/library/'
 alias nvfa='nvim $(fd . --hidden --type file | fzf --prompt="Open in Neovim >")'
 
 # cd to directory by searching for it 
-# cd $(fd . --hidden --type directory | fzf)
 alias cdf='cd $(fd . --hidden --type directory -E '.local/' -E 'Documents/library/' -E '.lutris/' -E '.mozilla/' -E '.wine/' -E 'Steam/' -E 'STM32Cube/' -E 'Games/' -E '.eclipse/' -E '.arduino15/'  -E '.git/' -E '.rustup/' -E '.cache/' -E '.cargo/' -E 'target/'| fzf --prompt="Navigate to directory > ")'
 
 # do not filter directories
