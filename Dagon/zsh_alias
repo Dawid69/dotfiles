@@ -34,7 +34,7 @@ alias nvf='nvim $(fd . --type file -E '.local/' -E '.git/'  -E '.mozilla/'  -E '
 # Do not filter directories
 
 # cd to directory by searching for it 
-alias cdf='cd $(fd . --type directory -E '.local/' -E '.git/'  -E '.mozilla/'  -E '.cache/' | fzf --prompt="Navigate to directory > ")'
+alias cdf='cd $(fd . --type directory -E '.local/' -E '.git/' -E 'ncs/'  -E '.mozilla/'  -E '.cache/' | fzf --prompt="Navigate to directory > ")'
 
 alias find_RPi='arp-scan --localnet | rg Raspberry'
 
