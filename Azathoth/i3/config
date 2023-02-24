@@ -13,7 +13,7 @@ bindsym $mod+y border normal
 #Apps that should launch at start
 
 # execute conky at startup 
-exec --no-startup-id conky > /tmp/conky.log & 
+exec --no-startup-id conky 2> /tmp/conky.log & 
 
 # execute picom..
 exec_always --no-startup-id picom -b --blur-background --config ~/.config/picom/picom.conf &
