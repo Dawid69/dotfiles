@@ -1,34 +1,39 @@
 [theme]
- name = "native"
+theme = "native"
 # file = "/home/dawid/.config/i3status-rust/tokyo-night.toml"
 
 [icons]
-name = "material-nf"
+icons = "material-nf"
 
 [[block]]
 block = "focused_window"
-max_width = 50
-show_marks = "visible"
+# max_w = 50
+# marks = "visible"
 
 [[block]]
 block = "music"
-buttons = ["play", "next"]
-interface_name_exclude = [".*kdeconnect.*"]
-hide_when_empty = true
+format = "{$combo.str(max_w:20) $play $next |}"
+interface_name_exclude = [".*kdeconnect.*", "mpd"]
+# hide_when_empty = true
+
 
 
 [[block]]
 block = "custom"
 command = "/home/dawid/.config/i3status-rust/numlock_status"
 interval = 0.5
+hide_when_empty = true
 
 [[block]]
 block = "sound"
 max_vol = 100
+[[block.click]]
+button = "left"
+action = "toggle_mute"
+
 
 [[block]]
 block = "time"
 interval = 1
 # format = "%a %d/%m %T :: %s"
-format = "%H:%M"
-
+format = " $timestamp.datetime(f:'%T') "
