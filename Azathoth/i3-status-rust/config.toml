@@ -12,7 +12,7 @@ block = "focused_window"
 
 [[block]]
 block = "music"
-format = "{$combo.str(max_w:20) $play $next |}"
+format = "{$combo.str(max_w:30)  $play  $next |}"
 interface_name_exclude = [".*kdeconnect.*", "mpd"]
 # hide_when_empty = true
 
