@@ -2,13 +2,13 @@
 
 
 
-OPTIONS="省\tLogout\n鈴\tSleep\n\tShutdown\n\tReboot"
+OPTIONS="省\tExit Window Manager\n鈴\tSleep\n\tShutdown\n\tReboot"
 
 option=`echo -e $OPTIONS | awk '{print $1}' | tr -d '\r\n\t'`
 if [ "$@" ]
 then
 	case $@ in
-		*Logout)
+		*'Exit Window Manager')
 			i3-msg exit
 			;;
 		*Sleep)
