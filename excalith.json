@@ -1,20 +1,20 @@
 {
 	"username": "dawid",
 	"theme": {
-		"backgroundColor": "#21252b",
-		"windowColor": "#282c34",
-		"glowColor": "#3d46687d",
-		"white": "#abb2bf",
-		"gray": "#5c6370",
-		"black": "#282c34",
-		"red": "#e06c75",
-		"green": "#98c379",
-		"yellow": "#e5c07b",
-		"blue": "#61afef",
-		"cyan": "#56b6c2",
-		"magenta": "#c678dd",
-		"violet": "#9853e3",
-		"orange": "#d19a66"
+		"backgroundColor": "#121317",
+		"windowColor": "#181825",
+		"glowColor": "#464c79",
+		"white": "#bac2de",
+		"gray": "#97989d",
+		"black": "#45475A",
+		"red": "#f38ba8",
+		"green": "#a6e3a1",
+		"blue": "#89b4fa",
+		"yellow": "#f9e2af",
+		"cyan": "#94e2d5",
+		"magenta": "#f5c2e7",
+		"violet": "#caa4f7",
+		"orange": "#fbb185"
 	},
 	"terminal": {
 		"fixedHeight": false,
@@ -111,6 +111,11 @@
 					"name": "Gmail",
 					"url": "https://mail.google.com/mail/u/0/#inbox",
 					"icon": "mdi:mail"
+				},
+				{
+					"name": "Drive",
+					"url": "https://drive.google.com",
+					"icon": "mdi:disk"
 				}
 			]
 		},
@@ -132,6 +137,11 @@
 				{
 					"name": "AUR",
 					"url": "https://aur.archlinux.org/",
+					"icon": "mdi:arch"
+				},
+				{
+					"name": "Arch Wiki",
+					"url": "https://wiki.archlinux.org/",
 					"icon": "mdi:arch"
 				},
 				{
