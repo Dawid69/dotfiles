@@ -122,7 +122,7 @@
 				"links": [
 					{
 						"name": "Spotify",
-						"url": "https://github.com",
+						"url": "https://open.spotify.com",
 						"icon": "mdi:spotify"
 					},
 					{
@@ -186,11 +186,6 @@
 				"color": "blue",
 				"align": "centre",
 				"links": [
-					{
-						"name": "Space",
-						"url": "fa6-solid:user-astronaut",
-						"icon": "mdi:reddit"
-					},
 					{
 						"name": "NASA",
 						"url": "https://blogs.nasa.gov/",
