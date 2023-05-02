@@ -1,5 +1,5 @@
 {
-	"username": "Excalith",
+	"username": "dawid",
 	"theme": {
 		"backgroundColor": "#121317",
 		"windowColor": "#1e212b",
@@ -143,16 +143,6 @@
 				"align": "centre",
 				"links": [
 					{
-						"name": "GitHub",
-						"url": "https://github.com",
-						"icon": "mdi:github"
-					},
-					{
-						"name": "GitLab",
-						"url": "https://gitlab.com",
-						"icon": "ph:gitlab-logo-simple-fill"
-					},
-					{
 						"name": "AUR",
 						"url": "https://aur.archlinux.org/",
 						"icon": "mdi:arch"
@@ -205,14 +195,24 @@
 				"links": []
 			},
 			{
-				"title": "Tech",
+				"title": "Work",
 				"color": "yellow",
 				"align": "centre",
 				"links": [
 					{
-						"name": "It's Foss",
-						"url": "https://itsfoss.com/",
-						"icon": "ri:mastodon-fill"
+						"name": "Digital Ocean",
+						"url": "https://cloud.digitalocean.com/",
+						"icon": "mdi:digital-ocean"
+					},
+					{
+						"name": "GitHub",
+						"url": "https://github.com",
+						"icon": "mdi:github"
+					},
+					{
+						"name": "GitLab",
+						"url": "https://gitlab.com",
+						"icon": "ph:gitlab-logo-simple-fill"
 					}
 				]
 			}
