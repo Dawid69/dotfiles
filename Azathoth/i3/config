@@ -114,17 +114,31 @@ bindsym $mod+Ctrl+l workspace next
 ###############################################################################
 #Set the names of workspaces
 
-set $ws0 "0:烈"
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:3."
-set $ws4 "4:4."
-set $ws5 "5:5."
-set $ws6 "6:6."
-set $ws7 "7:"
-set $ws8 "8:"
-set $ws9 "9:靈"
-set $ws10 "10:"
+set $ws0 "0"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# set $ws0 "0:烈"
+# set $ws1 "1:"
+# set $ws2 "2:"
+# set $ws3 "3:3."
+# set $ws4 "4:4."
+# set $ws5 "5:5."
+# set $ws6 "6:6."
+# set $ws7 "7:"
+# set $ws8 "8:"
+# set $ws9 "9:靈"
+# set $ws10 "10:"
+
+
 
 # switch to workspace
 bindsym $mod+grave workspace $ws0
@@ -247,7 +261,7 @@ client.background       $blue
 
 
 bar {
-        font xft:Fira Code:style=Bold 10
+        font xft:Fira Code:style=Bold 10 
         position top 
         status_command i3status-rs
         strip_workspace_numbers true

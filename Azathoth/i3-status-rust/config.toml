@@ -5,6 +5,8 @@ theme = "native"
 [icons]
 icons = "material-nf"
 
+
+
 [[block]]
 block = "focused_window"
 # max_w = 50
@@ -35,5 +37,9 @@ action = "toggle_mute"
 [[block]]
 block = "time"
 interval = 1
-# format = "%a %d/%m %T :: %s"
-format = " $timestamp.datetime(f:'%T') "
+[block.format]
+short = "$timestamp.datetime(f:'%s')"
+full = " $timestamp.datetime(f:'%T') "
+[[block.click]]
+button = "left"
+action = "toggle_format"
