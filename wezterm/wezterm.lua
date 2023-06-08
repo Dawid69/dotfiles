@@ -8,6 +8,15 @@ return {
 	hide_tab_bar_if_only_one_tab = true,
 	tab_bar_at_bottom = true,
 
+	window_decorations = "RESIZE",
+
+	window_padding = {
+		left = 2,
+		right = 0,
+		top = 10,
+		bottom = 0,
+	},
+
 	warn_about_missing_glyphs = false,
 	use_fancy_tab_bar = false,
 	show_new_tab_button_in_tab_bar = false,
