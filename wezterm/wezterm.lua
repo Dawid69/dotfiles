@@ -16,9 +16,9 @@ return {
 	-- They are kind of like my i3/sway keybinds... Using ALT as the modifier...
 	keys = {
 		{ key = "Tab", mods = "ALT", action = wezterm.action.SpawnWindow },
-		{ key = "b", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
-		{ key = "t", mods = "ALT", action = wezterm.action.SpawnTab("CurrentPaneDomain") },
-		{ key = "w", mods = "ALT", action = wezterm.action.CloseCurrentTab({ confirm = true }) },
+		{ key = "b",   mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
+		{ key = "t",   mods = "ALT", action = wezterm.action.SpawnTab("CurrentPaneDomain") },
+		{ key = "w",   mods = "ALT", action = wezterm.action.CloseCurrentTab({ confirm = true }) },
 
 		{
 			key = "n",
