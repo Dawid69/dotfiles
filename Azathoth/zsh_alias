@@ -22,7 +22,7 @@ alias yeet="paru -Rns"
 alias wtfis="/home/dawid/Documents/shellFiles/Used/wtfis.sh"
 alias wttr="/home/dawid/Documents/shellFiles/Used/weather.sh"
 alias del="trash put"
-alias ranger="source ranger"
+# alias ranger="source ranger"
 
 # Dir history
 alias dh='dirs -v'

@@ -8,6 +8,15 @@ return {
 	hide_tab_bar_if_only_one_tab = true,
 	tab_bar_at_bottom = true,
 
+	window_decorations = "RESIZE",
+
+	window_padding = {
+		left = 2,
+		right = 0,
+		top = 10,
+		bottom = 0,
+	},
+
 	warn_about_missing_glyphs = false,
 	use_fancy_tab_bar = false,
 	show_new_tab_button_in_tab_bar = false,
@@ -16,9 +25,9 @@ return {
 	-- They are kind of like my i3/sway keybinds... Using ALT as the modifier...
 	keys = {
 		{ key = "Tab", mods = "ALT", action = wezterm.action.SpawnWindow },
-		{ key = "b", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
-		{ key = "t", mods = "ALT", action = wezterm.action.SpawnTab("CurrentPaneDomain") },
-		{ key = "w", mods = "ALT", action = wezterm.action.CloseCurrentTab({ confirm = true }) },
+		{ key = "b",   mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
+		{ key = "t",   mods = "ALT", action = wezterm.action.SpawnTab("CurrentPaneDomain") },
+		{ key = "w",   mods = "ALT", action = wezterm.action.CloseCurrentTab({ confirm = true }) },
 
 		{
 			key = "n",

@@ -113,6 +113,7 @@
 			}
 		]
 	},
+<<<<<<< HEAD
 	"sections": {
 		"list": [
 			{
@@ -218,4 +219,119 @@
 			}
 		]
 	}
+=======
+	"sections": [
+		{
+			"title": "General",
+			"color": "green",
+			"align": "centre",
+			"links": [
+				{
+					"name": "Spotify",
+					"url": "https://open.spotify.com",
+					"icon": "mdi:spotify"
+				},
+				{
+					"name": "Gmail",
+					"url": "https://mail.google.com/mail/u/0/#inbox",
+					"icon": "mdi:mail"
+				},
+				{
+					"name": "Drive",
+					"url": "https://drive.google.com",
+					"icon": "mdi:disk"
+				}
+			]
+		},
+		{
+			"title": "Dev",
+			"color": "magenta",
+			"align": "centre",
+			"links": [
+				{
+					"name": "GitHub",
+					"url": "https://github.com",
+					"icon": "mdi:github"
+				},
+				{
+					"name": "GitLab",
+					"url": "https://gitlab.com",
+					"icon": "ph:gitlab-logo-simple-fill"
+				},
+				{
+					"name": "AUR",
+					"url": "https://aur.archlinux.org/",
+					"icon": "mdi:arch"
+				},
+				{
+					"name": "Arch Wiki",
+					"url": "https://wiki.archlinux.org/",
+					"icon": "mdi:arch"
+				},
+				{
+					"name": "Stack Overflow",
+					"url": "https://stackoverflow.com/",
+					"icon": "mdi:stack-overflow"
+				}
+			]
+		},
+		{
+			"title": "Social",
+			"color": "violet",
+			"align": "centre",
+			"links": [
+				{
+					"name": "Reddit",
+					"url": "https://reddit.com",
+					"icon": "mdi:reddit"
+				}
+			]
+		},
+		{
+			"title": "Science",
+			"color": "blue",
+			"align": "centre",
+			"links": [
+				{
+					"name": "PopSci",
+					"url": "https://popsci.com/",
+					"icon": "material-symbols:science"
+				},
+				{
+					"name": "Space",
+					"url": "fa6-solid:user-astronaut",
+					"icon": "mdi:reddit"
+				},
+				{
+					"name": "NASA",
+					"url": "https://blogs.nasa.gov/",
+					"icon": "simple-icons:nasa"
+				},
+				{
+					"name": "ESA",
+					"url": "https://blogs.esa.int/",
+					"icon": "mdi:black-mesa"
+				}
+			]
+		},
+		{
+			"title": "",
+			"color": "blue",
+			"align": "centre",
+			"links": []
+		},
+		{
+			"title": "Tech",
+			"color": "yellow",
+			"align": "centre",
+			"links": [
+				{
+					"name": "It's Foss",
+					"url": "https://itsfoss.com/",
+					"icon": "ri:mastodon-fill"
+				}
+			]
+		}
+	]
+>>>>>>> ab30568007ac1cd8371a14ae84767956a9a9d08c
 }
