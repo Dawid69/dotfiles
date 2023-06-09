@@ -1,0 +1,337 @@
+{
+	"username": "dawid",
+	"theme": {
+		"backgroundColor": "#121317",
+		"windowColor": "#1e212b",
+		"glowColor": "#6b5cb157",
+		"white": "#e2e2e2",
+		"gray": "#97989d",
+		"black": "#16161e",
+		"red": "#ec6183",
+		"green": "#2ed8a2",
+		"yellow": "#e8b195",
+		"blue": "#2bc3de",
+		"cyan": "#62e0e2",
+		"magenta": "#e069aa",
+		"violet": "#d1aff8",
+		"orange": "#ff8800"
+	},
+	"wallpaper": {
+		"url": "",
+		"easing": "ease-in-out",
+		"fadeIn": true,
+		"blur": true
+	},
+	"terminal": {
+		"fixedHeight": true,
+		"windowGlow": true,
+		"textGlow": false
+	},
+	"prompt": {
+		"ctrlC": true,
+		"placeholder": "command...",
+		"placeholderColor": "gray",
+		"userColor": "green",
+		"atColor": "gray",
+		"hostColor": "magenta",
+		"promptColor": "magenta",
+		"promptSymbol": "❯",
+		"caretColor": "green",
+		"selectionBg": "yellow",
+		"selectionFg": "black"
+	},
+	"fetch": {
+		"timeFormat": "HH:mm",
+		"dateFormat": "DD/MM/YYYY",
+		"titleColor": "yellow",
+		"image": "icon.svg",
+		"data": [
+			"Time: {time}",
+			"Date: {date}",
+			"{seperator}",
+			"OS: {osName} {osVersion}",
+			"Browser: {browser} {browserVersion}",
+			"Engine: {engineName}",
+			"{seperator}",
+			"{colors}"
+		]
+	},
+	"urlLaunch": {
+		"target": "_self",
+		"defaultColor": "white",
+		"hoverColor": "violet"
+	},
+	"search": {
+		"default": "https://google.com/search?q=",
+		"target": "_self",
+		"shortcutRegex": "([A-Za-z0-9]+) (.*)",
+		"shortcuts": [
+			{
+				"alias": "g",
+				"name": "Google Search",
+				"url": "https://google.com/search?q={}"
+			},
+			{
+				"alias": "d",
+				"name": "DuckDuckGo Search",
+				"url": "https://duckduckgo.com/?q={}"
+			},
+			{
+				"alias": "b",
+				"name": "Brave Search",
+				"url": "https://search.brave.com/search?q={}"
+			},
+			{
+				"alias": "gh",
+				"name": "Github Search",
+				"url": "https://github.com/search?q={}"
+			},
+			{
+				"alias": "s",
+				"name": "Stack Overflow Search",
+				"url": "https://stackoverflow.com/search?q={}"
+			},
+			{
+				"alias": "r",
+				"name": "Subreddit Search",
+				"url": "https://reddit.com/r/{}"
+			},
+			{
+				"alias": "w",
+				"name": "Wikipedia Search",
+				"url": "https://en.wikipedia.org/wiki/{}"
+			},
+			{
+				"alias": "aur",
+				"name": "AUR Search",
+				"url": "https://aur.archlinux.org/packages?O=0&K={}"
+			},
+			{
+				"alias": "awiki",
+				"name": "Archwiki Search",
+				"url": "https://wiki.archlinux.org/index.php?title=Special%3ASearch&search={}"
+			}
+		]
+	},
+<<<<<<< HEAD
+	"sections": {
+		"list": [
+			{
+				"title": "General",
+				"color": "green",
+				"align": "centre",
+				"links": [
+					{
+						"name": "Spotify",
+						"url": "https://open.spotify.com",
+						"icon": "mdi:spotify"
+					},
+					{
+						"name": "Gmail",
+						"url": "https://mail.google.com/mail/u/0/#inbox",
+						"icon": "mdi:mail"
+					},
+					{
+						"name": "Drive",
+						"url": "https://drive.google.com",
+						"icon": "mdi:disk"
+					}
+				]
+			},
+			{
+				"title": "Dev",
+				"color": "magenta",
+				"align": "centre",
+				"links": [
+					{
+						"name": "AUR",
+						"url": "https://aur.archlinux.org/",
+						"icon": "mdi:arch"
+					},
+					{
+						"name": "Arch Wiki",
+						"url": "https://wiki.archlinux.org/",
+						"icon": "mdi:arch"
+					},
+					{
+						"name": "Stack Overflow",
+						"url": "https://stackoverflow.com/",
+						"icon": "mdi:stack-overflow"
+					}
+				]
+			},
+			{
+				"title": "Social",
+				"color": "violet",
+				"align": "centre",
+				"links": [
+					{
+						"name": "Reddit",
+						"url": "https://reddit.com",
+						"icon": "mdi:reddit"
+					}
+				]
+			},
+			{
+				"title": "Science",
+				"color": "blue",
+				"align": "centre",
+				"links": [
+					{
+						"name": "NASA",
+						"url": "https://blogs.nasa.gov/",
+						"icon": "simple-icons:nasa"
+					},
+					{
+						"name": "ESA",
+						"url": "https://blogs.esa.int/",
+						"icon": "mdi:black-mesa"
+					}
+				]
+			},
+			{
+				"title": "",
+				"color": "blue",
+				"align": "centre",
+				"links": []
+			},
+			{
+				"title": "Work",
+				"color": "yellow",
+				"align": "centre",
+				"links": [
+					{
+						"name": "Digital Ocean",
+						"url": "https://cloud.digitalocean.com/",
+						"icon": "mdi:digital-ocean"
+					},
+					{
+						"name": "GitHub",
+						"url": "https://github.com",
+						"icon": "mdi:github"
+					},
+					{
+						"name": "GitLab",
+						"url": "https://gitlab.com",
+						"icon": "ph:gitlab-logo-simple-fill"
+					}
+				]
+			}
+		]
+	}
+=======
+	"sections": [
+		{
+			"title": "General",
+			"color": "green",
+			"align": "centre",
+			"links": [
+				{
+					"name": "Spotify",
+					"url": "https://open.spotify.com",
+					"icon": "mdi:spotify"
+				},
+				{
+					"name": "Gmail",
+					"url": "https://mail.google.com/mail/u/0/#inbox",
+					"icon": "mdi:mail"
+				},
+				{
+					"name": "Drive",
+					"url": "https://drive.google.com",
+					"icon": "mdi:disk"
+				}
+			]
+		},
+		{
+			"title": "Dev",
+			"color": "magenta",
+			"align": "centre",
+			"links": [
+				{
+					"name": "GitHub",
+					"url": "https://github.com",
+					"icon": "mdi:github"
+				},
+				{
+					"name": "GitLab",
+					"url": "https://gitlab.com",
+					"icon": "ph:gitlab-logo-simple-fill"
+				},
+				{
+					"name": "AUR",
+					"url": "https://aur.archlinux.org/",
+					"icon": "mdi:arch"
+				},
+				{
+					"name": "Arch Wiki",
+					"url": "https://wiki.archlinux.org/",
+					"icon": "mdi:arch"
+				},
+				{
+					"name": "Stack Overflow",
+					"url": "https://stackoverflow.com/",
+					"icon": "mdi:stack-overflow"
+				}
+			]
+		},
+		{
+			"title": "Social",
+			"color": "violet",
+			"align": "centre",
+			"links": [
+				{
+					"name": "Reddit",
+					"url": "https://reddit.com",
+					"icon": "mdi:reddit"
+				}
+			]
+		},
+		{
+			"title": "Science",
+			"color": "blue",
+			"align": "centre",
+			"links": [
+				{
+					"name": "PopSci",
+					"url": "https://popsci.com/",
+					"icon": "material-symbols:science"
+				},
+				{
+					"name": "Space",
+					"url": "fa6-solid:user-astronaut",
+					"icon": "mdi:reddit"
+				},
+				{
+					"name": "NASA",
+					"url": "https://blogs.nasa.gov/",
+					"icon": "simple-icons:nasa"
+				},
+				{
+					"name": "ESA",
+					"url": "https://blogs.esa.int/",
+					"icon": "mdi:black-mesa"
+				}
+			]
+		},
+		{
+			"title": "",
+			"color": "blue",
+			"align": "centre",
+			"links": []
+		},
+		{
+			"title": "Tech",
+			"color": "yellow",
+			"align": "centre",
+			"links": [
+				{
+					"name": "It's Foss",
+					"url": "https://itsfoss.com/",
+					"icon": "ri:mastodon-fill"
+				}
+			]
+		}
+	]
+>>>>>>> ab30568007ac1cd8371a14ae84767956a9a9d08c
+}
