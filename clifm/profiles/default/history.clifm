@@ -1,0 +1,251 @@
+edit
+#1679771853
+ls
+#1679771865
+la
+#1679771869
+ls -a
+#1679771871
+ls
+#1679771875
+.config/
+#1679771876
+ls
+#1679771887
+clifm/
+#1679771888
+ls
+#1679771899
+bat colors/
+#1679771903
+colors/
+#1679771904
+ls
+#1679771938
+movies/
+#1679771945
+Amsterdam\ \(2022\)\ \[720p\]\ \[WEBRip\]\ \[YTS.MX\]/Amsterdam.2022.720p.WEBRip.x264.AAC-\[YTS.MX\].mp4
+#1679771956
+ls
+#1679771957
+dawid/
+#1679771973
+f
+#1679771976
+b
+#1679771977
+f
+#1679771984
+p
+#1679771989
+p Arduino/
+#1679772046
+ls
+#1679772048
+Documents/
+#1679772147
+../Videos/
+#1679772148
+ls
+#1679772152
+series/
+#1679772160
+bb Allo\ Allo\ 1984\ Season\ 1\ to\ 3\ Complete\ DVDRip\ x264\ \[i_c\]/
+#1679772167
+ls
+#1679772172
+bb *
+#1679772180
+ls
+#1679772182
+la
+#1679772183
+ls -a
+#1679772187
+ls -al
+#1679772195
+cd movies/
+#1679772199
+bb *
+#1679772205
+ls -al
+#1679772392
+ls
+#1679772462
+bm
+#1679772503
+ls
+#1679772527
+r Vampire_Survivors
+#1679772805
+?
+#1679850375
+ls
+#1679850394
+?
+#1679850418
+r 6
+#1679850424
+ls
+#1679850460
+r 6
+#1679850482
+tabulate
+#1679852930
+gg
+#1679852939
+Downloads/
+#1679852952
+ls
+#1679852958
+American.Hustle.2013.1080p.BluRay.x264.YIFY.mp4
+#1680034081
+Downloads/
+#1680034093
+../Videos/
+#1680034095
+m
+#1680034098
+movies/
+#1680034111
+se
+#1680034113
+series/
+#1680034120
+la
+#1680034122
+ls
+#1680034133
+Rome_S01-S02_2005-2007_720p_BluRay_HEVC_H265_BONE/
+#1680034135
+ls
+#1680034138
+Season\ 2/
+#1680034139
+ls
+#1680034157
+mpv Rome\ S02E03\ 720p\ BluRay\ HEVC\ H265\ BONE.mp4
+#1680034184
+mpv Rome\ S02E01\ 720p\ BluRay\ HEVC\ H265\
+#1680034191
+mpv Rome\ S02E08\ 720p\ BluRay\ HEVC\ H265\ BONE.mp4
+#1680034204
+ls
+#1680034205
+//
+#1680459704
+la
+#1680459705
+ls
+#1680459726
+r Insurmountable_2.0.7.3_\(57585\)_win_gog/
+#1680459739
+rm The\ Good\ Liar\ \(2019\)\ \[1080p\]\ \[BluRay\]\ \[5.1\]\ \[YTS.LT\]/
+#1680459747
+rThe\ Good\ Liar\ \(2019\)\ \[1080p\]\ \[BluRay\]\ \[5.1\]\ \[YTS.LT\]/
+#1680459752
+r The\ Good\ Liar\ \(2019\)\ \[1080p\]\ \[BluRay\]\ \[5.1\]\ \[YTS.LT\]/
+#1680459758
+n
+#1680459762
+ls
+#1680459774
+rm ls
+#1680459776
+ls
+#1680459791
+tempcomponents/
+#1680459793
+ls
+#1680459800
+r tempcomponents/
+#1680459820
+r The\ White\ Tiger\ \(2021\)\ \[720p\]\ \[BluRay\]\ \[YTS.MX\]/
+#1680459828
+r Palm\ Springs\ \(2020\)\ \[1080p\]\ \[WEBRip\]\ \[5.1\]\ \[YTS.MX\]/
+#1680459835
+r Papers_Please_1.4.11.124_\(63294\)_win_gog/
+#1684692067
+mpv Frank.2014.1080p.BluRay.x264.YIFY.mp4
+#1684865462
+d 3 6 7 8 10 15 16 17 25
+#1684865475
+ls
+#1684865483
+r 3 6 7 8 10 15 16 17 25
+#1684865491
+ls
+#1685451431
+Downloads/
+#1685451439
+r ble/
+#1685451454
+mkdir BluetoothForLinuxDevelopers
+#1685451467
+m BluetoothForLinuxDevelopers-V1_0_1.zip BluetoothForLinuxDevelopers/
+#1685451472
+cd BluetoothForLinuxDevelopers/
+#1685451473
+ls
+#1685451480
+unzip BluetoothForLinuxDevelopers-V1_0_1.zip
+#1685451483
+cd BluetoothForLinuxDevelopers\ -\ V1_0_1/
+#1685451484
+ls
+#1685451490
+zathura LINUX\ STUDY\ GUIDE\ EULA.pdf
+#1685451503
+cd docs/
+#1686144478
+ls
+#1686144500
+hidden
+#1686144523
+r 25
+#1686144536
+ls
+#1686144540
+cat trims.prefs
+#1686144551
+r .swt/
+#1686144566
+r .w3m/
+#1686144573
+cat .rnd
+#1686826896
+exit
+#1686826898
+ls
+#1686826915
+:q
+#1686827062
+.config/
+#1686827064
+clifm/
+#1686827066
+colors/
+#1686827299
+hh
+#1686827304
+.config/
+#1686827325
+~
+#1686827467
+Downloads/
+#1686827484
+j
+#1686827498
+Pictures/
+#1686827501
+Jbay2022/
+#1686827506
+Pictures/
+#1686827508
+sortOut/
+#1686827510
+Jag/
+#1686828725
+Downloads/
+#1686828726
+ls
