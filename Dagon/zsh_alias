@@ -19,10 +19,9 @@ alias ls='exa'
 alias lsa='exa -lah'
 
 alias yeet="paru -Rns"
-alias wtfis="/home/dawid/Documents/shellFiles/Used/wtfis.sh"
+alias wtfis="tldr"
 alias wttr="/home/dawid/Documents/shellFiles/Used/weather.sh"
-alias del="trash"
-alias ranger="source ranger"
+alias del="trash put"
 
 # Dir history
 alias dh='dirs -v'
