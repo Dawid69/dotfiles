@@ -27,15 +27,15 @@ alias del="trash put"
 alias dh='dirs -v'
 
 # Neovim find and open file
-alias nvf='nvim $(fd . --hidden --type file -E '.local/' -E 'Documents/library/' -E '.lutris/' -E '.mozilla/' -E '.wine/' -E 'Steam/' -E 'STM32Cube/' -E 'Games/' -E '.eclipse/' -E '.arduino15/'  -E '.git/' -E '.rustup/' -E '.cache/' -E '.cargo/' -E 'target/'| sk --prompt="Open in Neovim >" --preview "bat {}")'
+alias nvf='nvim $(fd . --hidden --type file -E '.local/' -E 'Documents/library/' -E '.lutris/' -E '.mozilla/' -E '.wine/' -E 'Steam/' -E 'STM32Cube/' -E 'Games/' -E '.eclipse/' -E '.arduino15/'  -E '.git/' -E '.rustup/' -E '.cache/' -E '.cargo/' -E 'target/'| sk --prompt="Open in Neovim >" --preview "bat --color always {}")'
 # Do not filter directories
-alias nvfa='nvim $(fd . --hidden --type file | sk --prompt="Open in Neovim >" --preview "bat {}")'
+alias nvfa='nvim $(fd . --hidden --type file | sk --prompt="Open in Neovim >" --preview "bat --color always {}")'
 
 # cd to directory by searching for it 
-alias cdf='cd $(fd . --hidden --type directory -E '.local/' -E 'Documents/library/' -E '.lutris/' -E '.mozilla/' -E '.wine/' -E 'Steam/' -E 'STM32Cube/' -E 'Games/' -E '.eclipse/' -E '.arduino15/'  -E '.git/' -E '.rustup/' -E '.cache/' -E '.cargo/' -E 'target/'| sk --prompt="Navigate to directory > " --preview "exa {}")'
+alias cdf='cd $(fd . --hidden --type directory -E '.local/' -E 'Documents/library/' -E '.lutris/' -E '.mozilla/' -E '.wine/' -E 'Steam/' -E 'STM32Cube/' -E 'Games/' -E '.eclipse/' -E '.arduino15/'  -E '.git/' -E '.rustup/' -E '.cache/' -E '.cargo/' -E 'target/'| sk --prompt="Navigate to directory > " --preview "exa -lah {}")'
 
 # do not filter directories
-alias cdfa='cd $(fd . --hidden --type directory | sk --prompt="Navigate to directory > " --preview "exa {}")'
+alias cdfa='cd $(fd . --hidden --type directory | sk --prompt="Navigate to directory > " --preview "exa -lah {}")'
 
 # find any raspberry pis on the network
 alias find_RPi='arp-scan --localnet | rg Raspberry'
