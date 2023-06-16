@@ -183,7 +183,7 @@ DiskUsage=true
 #
 # Defaults to 'default-256', or 'default' (16 colors) if 256 colors support
 # is not detected
-ColorScheme=gruvbox
+ColorScheme=onedark
 
 # Enable/disable icons.
 # By default, emojis (widely available today) are used as icons.
