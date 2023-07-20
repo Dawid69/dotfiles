@@ -12,11 +12,11 @@ unalias ls
 unalias lsa
 
 #aliases for exa 
-alias la="exa -lah"
+alias la="exa -lahG"
 alias l='exa --long --tree --level=3'
-alias ll='exa -lh'
-alias ls='exa'
-alias lsa='exa -lah'
+alias ll='exa -lhG'
+alias ls='exa -G'
+alias lsa='exa -lahG'
 
 alias yeet="paru -Rns"
 alias wtfis="tldr"
@@ -32,7 +32,7 @@ alias nvf='nvim $(fd . --hidden --type file -E '.local/' -E 'Documents/library/'
 alias nvfa='nvim $(fd . --hidden --type file | sk --prompt="Open in Neovim >" --preview "bat --color always {}")'
 
 # cd to directory by searching for it 
-alias cdf='cd $(fd . --hidden --type directory -E '.local/' -E '.npm/' -E 'easyeda/' -E '.particle/' -E 'Documents/library/' -E '.lutris/' -E '.mozilla/' -E '.wine/' -E 'Steam/' -E 'STM32Cube/' -E 'Games/' -E '.eclipse/' -E '.arduino15/'  -E '.git/' -E '.rustup/' -E '.cache/' -E '.cargo/' -E 'target/'| sk --prompt="Navigate to directory > " --preview "exa -lah {}")'
+alias cdf='cd $(fd . --hidden --type directory -E '.local/' -E '.npm/' -E 'easyeda/' -E '.platformio/' -E '.particle/' -E 'Documents/library/' -E '.lutris/' -E '.mozilla/' -E '.wine/' -E 'Steam/' -E 'STM32Cube/' -E 'Games/' -E '.eclipse/' -E '.arduino15/'  -E '.git/' -E '.rustup/' -E '.cache/' -E '.cargo/' -E 'ncs/' -E '.vscode-oss/'  -E 'target/'| sk $1 --prompt="Navigate to directory > " --preview "exa -lah {}")'
 
 # do not filter directories
 alias cdfa='cd $(fd . --hidden --type directory | sk --prompt="Navigate to directory > " --preview "exa -lah {}")'
