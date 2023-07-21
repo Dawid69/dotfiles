@@ -39,11 +39,7 @@
 	font-weight: 900;
 	font-size: 14px;
 	font-family: "Fira Code";
-	border-bottom: 1px solid transparent;
-	border-image: linear-gradient(to bottom right, @onedark_red_color, @onedark_orange_color, @onedark_yellow_color, @onedark_green_color, @onedark_cyan_color, @onedark_blue_color, @onedark_indigo_color, @onedark_violet_color) 1;
-	border-image-slice: 4;
-	border-radius: 5px;
-}
+	}
 
 #bar #end {
 	margin-right: 10px;
@@ -52,11 +48,29 @@
 	margin-left: 10px;
 }
 
+.clock {
+	border-bottom: 2px solid transparent;
+	border-image: linear-gradient(to bottom right, @onedark_red_color, @onedark_orange_color, @onedark_yellow_color, @onedark_green_color, @onedark_cyan_color, @onedark_blue_color, @onedark_indigo_color, @onedark_violet_color) 1;
+	border-image-slice: 4;
+	border-radius: 5px;
+}
+.label {
+	border-bottom: 2px solid transparent;
+	border-image: linear-gradient(to bottom right, @onedark_red_color, @onedark_orange_color, @onedark_yellow_color, @onedark_green_color, @onedark_cyan_color, @onedark_blue_color, @onedark_indigo_color, @onedark_violet_color) 1;
+	border-image-slice: 4;
+	border-radius: 15%;
+}
+
 .workspaces {
+	border-bottom: 2px solid transparent;
+	border-image: linear-gradient(to bottom right, @onedark_red_color, @onedark_orange_color, @onedark_yellow_color, @onedark_green_color, @onedark_cyan_color, @onedark_blue_color, @onedark_indigo_color, @onedark_violet_color) 1;
+	border-image-slice: 4;
+	border-radius: 5px;
+
 }
 .workspaces .item {
 	font-size: 10px;
-	padding: 0px 0px;
+	padding: 0px 2px;
 	background-color: @onedark_bg_color;
 	color: @onedark_fg_50_color;
 	border-radius: 5px;

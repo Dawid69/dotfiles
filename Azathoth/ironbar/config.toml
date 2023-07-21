@@ -1,12 +1,16 @@
-anchor_to_edges = false
 # icon_theme = 'Paper'
 position = 'top'
 height = 5
 
-[[end]]
-type = 'clock'
-
 [[start]]
+type = 'clock'
+format = "%s"
+
+[[end]]
+type = "label"
+label = "{{250: /home/dawid/.config/ironbar/scripts/getVol.sh}}"
+
+[[center]]
 all_monitors = false
 type = 'workspaces'
 
