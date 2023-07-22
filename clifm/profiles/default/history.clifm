@@ -305,3 +305,33 @@ nrf52832_qfaa_dcdc_schematic.pdf
 Pictures/
 #1689974923
 :q
+#1690029410
+imv 35
+#1690029426
+m 35 14
+#1690029472
+mv hacknet.webp wall/
+#1690029614
+wall/
+#1690029620
+r 2
+#1690029624
+imv 1
+#1690029681
+rapidsave.com_black_hole_animation_by_me_2023-5lvj8hslneda1.mp4 wall
+#1690029688
+mv rapidsave.com_black_hole_animation_by_me_2023-5lvj8hslneda1.mp4 wall
+#1690029690
+wall
+#1690029695
+wall/
+#1690029696
+ls
+#1690029715
+mv rapidsave.com_black_hole_animation_by_me_2023-5lvj8hslneda1.mp4 w
+#1690029742
+rename w blackHole.mp4
+#1690029752
+mv w blackHole.mp4
+#1690029758
+mpv blackHole.mp4
