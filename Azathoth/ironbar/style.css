@@ -59,7 +59,19 @@
 	border-image: linear-gradient(to bottom right, @onedark_red_color, @onedark_orange_color, @onedark_yellow_color, @onedark_green_color, @onedark_cyan_color, @onedark_blue_color, @onedark_indigo_color, @onedark_violet_color) 1;
 	border-image-slice: 4;
 	border-radius: 15%;
+	margin-left: 10px;
+	margin-right: 3px;
 }
+
+#numlock{
+	color: @onedark_fg_50_color;
+  font-size: 20px;
+}
+
+#volume {
+  font-size: 14px;
+}
+
 
 .workspaces {
 	border-bottom: 2px solid transparent;
