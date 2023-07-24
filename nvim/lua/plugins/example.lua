@@ -9,14 +9,11 @@ if true then return {} end
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-  -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
-
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "tokyonight",
     },
   },
 
@@ -216,6 +213,7 @@ return {
       return {}
     end,
   },
+
   -- then: setup supertab in cmp
   {
     "hrsh7th/nvim-cmp",
@@ -237,8 +235,8 @@ return {
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
-            -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
-            -- this way you will only jump inside the snippet region
+          -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
+          -- this way you will only jump inside the snippet region
           elseif luasnip.expand_or_jumpable() then
             luasnip.expand_or_jump()
           elseif has_words_before() then

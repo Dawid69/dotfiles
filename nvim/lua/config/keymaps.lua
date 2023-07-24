@@ -6,6 +6,8 @@ local keymap = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 local expr_opts = { noremap = true, expr = true, silent = true }
 
+--keymap("n", "<leader>x", ":buf", default_opts)
+
 -- jj to escape input mode...
 keymap("i", "jj", "<ESC>", default_opts)
 keymap("t", "jj", "<C-\\><C-n>", default_opts)
