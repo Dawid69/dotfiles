@@ -1,9 +1,5 @@
-clifm/profiles/default/dirhist.clifm
-clifm/profiles/default/jump.clifm
-clifm/profiles/default/history.clifm
-clifm/profiles/default/history.clifm
-clifm/profiles/default/jump.clifm
-clifm/profiles/default/jump.clifm
-clifm/profiles/default/history.clifm
-nvim/lazy-lock.json
-nvim/lazy-lock.json
+**/dirhist.clifm
+**/jump.clifm
+**/history.clifm
+**/lazy-lock.json
+
