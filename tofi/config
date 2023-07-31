@@ -11,7 +11,7 @@ background-color = #000A
 
 hide-cursor=true
 history=true
-auto-accept-single=true
+auto-accept-single=false
 terminal = wezterm -e
 drun-launch = false
 
