@@ -110,7 +110,7 @@ return {
         "markdown",
         "markdown_inline",
         "regex",
-        "tsx",
+        -- "tsx",
         "vim",
         "yaml",
       },
