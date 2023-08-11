@@ -17,26 +17,13 @@ return {
       },
       severity_sort = true,
     },
-    -- Enable this to enable the builtin LSP inlay hints on Neovim >= 0.10.0
-    -- Be aware that you also will need to properly configure your LSP server to
-    -- provide the inlay hints.
-    inlay_hints = {
-      enabled = false,
-    },
-    -- add any global capabilities here
-    capabilities = {},
-    -- Automatically format on save
-    autoformat = true,
     -- Enable this to show formatters used in a notification
     -- Useful for debugging formatter issues
-    format_notify = false,
+    format_notify = true,
     -- options for vim.lsp.buf.format
     -- `bufnr` and `filter` is handled by the LazyVim formatter,
     -- but can be also overridden when specified
-    format = {
-      formatting_options = nil,
-      timeout_ms = nil,
-    },
+
     -- LSP Server Settings
     ---@type lspconfig.options
     servers = {

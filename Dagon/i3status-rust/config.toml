@@ -17,7 +17,7 @@ interface_name_exclude = [".*kdeconnect.*", "mpd"]
 
 [[block]]
 block = "backlight"
-device = "amdgpu_bl0"
+device = "amdgpu_bl1"
 
 [[block]]
 block = "custom"
@@ -39,7 +39,6 @@ interval = 1
 full = " $timestamp.datetime(f:%s)"
 short = " $timestamp.datetime(f:'%a %d/%m %T :: %s') "
 
-
 [[block]]
 block = "battery"
 interval = 10
@@ -47,6 +46,3 @@ full_format = "$icon"
 format = "$icon $percentage"
 # format_alt = "{time}"
 if_command = "test -e /sys/class/power_supply/BAT0"
-
-
-
