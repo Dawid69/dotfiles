@@ -227,8 +227,8 @@ bindsym XF86AudioRaiseVolume exec /home/dawid/.config/sway/vol.sh --inc
 bindsym XF86AudioLowerVolume exec /home/dawid/.config/sway/vol.sh --dec
 bindsym XF86AudioMute exec exec /home/dawid/.config/sway/vol.sh --mute
 #brightness control 
-bindsym XF86MonBrightnessUp exec light -A 10
-bindsym XF86MonBrightnessDown exec light -U 10
+bindsym XF86MonBrightnessUp exec light -Ar 5
+bindsym XF86MonBrightnessDown exec light -Ur 5
 
 #
 # Aesthetics stuff
