@@ -60,7 +60,7 @@ return {
 			key = "0",
 			mods = "ALT",
 			action = wezterm.action.SplitHorizontal({
-				args = { "calc" },
+				args = { "fend" },
 			}),
 		},
 		{
