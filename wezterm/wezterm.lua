@@ -46,6 +46,11 @@ return {
 		--{ key = "f", mods = "ALT", action = act.ActivateFindMode },
 		{ key = "c", mods = "ALT", action = act.ActivateCopyMode },
 
+		{ key = "c", mods = "CTRL|SHIFT", action = act.CopyTo("Clipboard") },
+		{ key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("Clipboard") },
+		{ key = "p", mods = "CTRL|SHIFT", action = wezterm.action.ActivateCommandPalette },
+		-- { key = "Esc", mods = "CTRL|SHIFT", action = wezterm.action.ActivateVisualMode },
+
 		{
 			key = "n",
 			mods = "ALT",
