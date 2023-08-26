@@ -26,6 +26,7 @@ return {
 
     -- LSP Server Settings
     ---@type lspconfig.options
+    ---@diagnostic disable-next-line: missing-fields
     servers = {
       jsonls = { mason = false },
       rust_analyzer = {},
