@@ -51,6 +51,9 @@ return {
 		{ key = "p", mods = "CTRL|SHIFT", action = wezterm.action.ActivateCommandPalette },
 		-- { key = "Esc", mods = "CTRL|SHIFT", action = wezterm.action.ActivateVisualMode },
 
+		{ key = "-", mods = "CTRL", action = wezterm.action.DecreaseFontSize },
+		{ key = "=", mods = "CTRL", action = wezterm.action.IncreaseFontSize },
+		{ key = "0", mods = "CTRL", action = wezterm.action.ResetFontSize },
 		{
 			key = "n",
 			mods = "ALT",
