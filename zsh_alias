@@ -32,4 +32,4 @@ alias cdf='cd $(fd . --hidden --type directory -E '.ccache/' -E '.local/' -E '.n
 alias cdfa='cd $(fd . --hidden --type directory | sk --prompt="Navigate to directory > " --preview "exa -lah {}")'
 
 # find any raspberry pis on the network
-alias find_RPi='arp-scan --localnet | rg Raspberry'
+alias find_RPi='arp-scan --localnet --interface wlan0| rg Raspberry'
