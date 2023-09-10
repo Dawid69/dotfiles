@@ -33,3 +33,6 @@ alias cdfa='cd $(fd . --hidden --type directory | sk --prompt="Navigate to direc
 
 # find any raspberry pis on the network
 alias find_RPi='arp-scan --localnet --interface wlan0| rg Raspberry'
+
+alias nyarlathotep_Off='ssh -t nyarlathotep "sudo poweroff"'
+
