@@ -287,6 +287,4 @@ bindsym Print exec grim -g "$(slurp)" - | wl-copy && exec notify-send "Screensho
 exec udiskie
 exec wl-paste -t text --watch clipman store --no-persist
 
-exec autotiling-rs
-
 include /etc/sway/config.d/*

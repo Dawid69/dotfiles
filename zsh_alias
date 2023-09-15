@@ -36,3 +36,5 @@ alias find_RPi='arp-scan --localnet --interface wlan0| rg Raspberry'
 
 alias nyarlathotep_Off='ssh -t nyarlathotep "sudo poweroff"'
 
+alias cat='bat --paging=never'
+
