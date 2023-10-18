@@ -1,7 +1,8 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
 return {
-	color_scheme = "tokyonight",
+	-- color_scheme = "Grayscale (dark) (terminal.sexy)",
+	color_scheme = "GruvboxDarkHard",
 	window_background_opacity = 0.87,
 
 	font = wezterm.font("Fira Code"),
