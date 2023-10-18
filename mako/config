@@ -1,10 +1,44 @@
-# see man 5 mako for extra config values...
-background-color=#30303050
-border-color=#60606050
-border-radius=10
-width=200
+# Global configuration options
+max-history=5
+sort=+time
 
-max-visible=3
+# Binding options
+on-button-left=dismiss
+on-button-right=dismiss-all
 
+# Style options
+font=Fira Code 10
+background-color=#252423
+text-color=#e2cca9
+width=300
+height=100
+margin=10
+padding=15
+border-size=0
+border-radius=5
 icons=1
-default-timeout=3500
+max-icon-size=128
+icon-location=left
+markup=1
+actions=1
+history=1
+text-alignment=left
+default-timeout=15000
+layer=top
+anchor=bottom-right
+
+[category=CHANGE_LAYOUT]
+font=Fira Code 25
+background-color=#252423
+text-color=#e2cca9
+width=300
+height=100
+margin=300
+padding=15
+border-size=0
+border-radius=5
+history=0
+text-alignment=center
+layer=top
+default-timeout=400
+anchor=bottom-center
