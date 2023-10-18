@@ -1,3 +1,26 @@
+
+
+## Color stuff
+
+
+# Color binds
+set $col_focused #f28534
+set $col_focused_inactive #e9b143
+set $col_unfocused #3c3836
+set $col_text_dark #32302f
+set $col_text_light #e2cca9
+set $col_urgent #f2594b
+set $col_unfocused_border #252423
+
+# class                  border                 background             text             indicator              child_border
+client.focused           $col_focused           $col_focused           $col_text_dark   $col_focused           $col_focused
+client.focused_inactive  $col_focused_inactive  $col_focused_inactive  $col_text_dark   $col_focused_inactive  $col_focused_inactive
+client.unfocused         $col_unfocused_border  $col_unfocused         $col_text_light  $col_unfocused         $col_unfocused
+client.urgent            $col_text_dark         $col_urgent            $col_text_dark   $col_urgent            $col_urgent
+
+
+
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -267,12 +290,12 @@ bar {
 
     colors {
         separator #666666
-        background #1a1b25aa
+        background $col_unfocused
         statusline #dddddd
-        focused_workspace #bb9af8 #bb9af8 #ffffff
-        active_workspace  #7dceff #7dceff #ffffff
-        inactive_workspace #7dceff #7dceff #888888
-        urgent_workspace #2f343a #ec6183 #ffffff
+        focused_workspace $col_unfocused_border $col_focused $col_text_dark 
+        active_workspace  $col_unfocused_border $col_focused_inactive $col_text_dark
+        inactive_workspace $col_unfocused_border $col_unfocused_border $col_text_light
+        urgent_workspace $col_unfocused_border $col_urgent #ffffff
     }
 
 }
