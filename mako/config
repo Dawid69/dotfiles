@@ -23,7 +23,7 @@ markup=1
 actions=1
 history=1
 text-alignment=left
-default-timeout=15000
+default-timeout=5000
 layer=top
 anchor=bottom-right
 
