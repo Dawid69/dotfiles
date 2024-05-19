@@ -1,10 +1,10 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
+
 return {
 	-- color_scheme = "Grayscale (dark) (terminal.sexy)",
 	color_scheme = "GruvboxDarkHard",
 	window_background_opacity = 0.87,
-
 	font = wezterm.font("Fira Code"),
 	hide_tab_bar_if_only_one_tab = true,
 	tab_bar_at_bottom = true,
@@ -95,4 +95,6 @@ return {
 		{ key = "8", mods = "ALT", action = wezterm.action({ ActivateTab = 7 }) },
 		{ key = "9", mods = "ALT", action = wezterm.action({ ActivateTab = 8 }) },
 	},
+	-- For some reason it doesnt work on hyprland so adding this here.
+	enable_wayland = false,
 }
