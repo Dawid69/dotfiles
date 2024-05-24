@@ -1,80 +1,82 @@
+"$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = true
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vicmd_symbol = "[<](bold green)"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
 
 [cmd_duration]
 show_milliseconds = true
 
 
-[aws]
-symbol = "  "
-
-[buf]
-symbol = " "
-
 [c]
-symbol = " "
+symbol = "C "
 
-[conda]
-symbol = " "
-
-[dart]
-symbol = " "
+[cmake]
+symbol = "cmake "
 
 [directory]
-read_only = " "
+read_only = " root"
 
 [docker_context]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
+symbol = "docker "
 
 [git_branch]
-symbol = " "
+symbol = "git "
 
 [golang]
-symbol = " "
-
-[haskell]
-symbol = " "
+symbol = "go "
 
 [hg_branch]
-symbol = " "
+symbol = "hg "
 
 [java]
-symbol = " "
-
-[julia]
-symbol = " "
+symbol = "java "
 
 [lua]
 symbol = "lua "
-[memory_usage]
-symbol = " "
-
-[nim]
-symbol = " "
-
-[nix_shell]
-symbol = " "
 
 [nodejs]
-symbol = " "
+symbol = "nodejs "
+
+[memory_usage]
+symbol = "memory "
+
+[nim]
+symbol = "nim "
+
+[nix_shell]
+symbol = "nix "
+
+[ocaml]
+symbol = "ml "
 
 [package]
-symbol = " "
+symbol = "pkg "
+
+[perl]
+symbol = "pl "
+
+[php]
+symbol = "php "
 
 [python]
-symbol = " "
-
-[spack]
-symbol = "🅢 "
+symbol = "py "
 
 [rust]
-symbol = " "
+symbol = "rs "
 
 [sudo]
 symbol = "sudo "
