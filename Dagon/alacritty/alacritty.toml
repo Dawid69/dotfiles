@@ -1,0 +1,13 @@
+
+import = ["/home/dawid/Documents/dotfiles/Dagon/alacritty/theme.toml"]
+
+
+[window]
+dynamic_padding = true
+opacity = 0.9
+
+[font]
+normal.family = "Fira code medium"
+
+[keyboard]
+bindings = [{ key = "Tab", mods = "Alt", action = "SpawnNewInstance" }]
