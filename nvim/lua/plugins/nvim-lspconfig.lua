@@ -29,7 +29,7 @@ return {
     ---@diagnostic disable-next-line: missing-fields
     servers = {
       jsonls = { mason = false },
-      rust_analyzer = {},
+      -- rust_analyzer = {},
       clangd = {},
       lua_ls = {
         -- mason = false, -- set to false if you don't want this server to be installed with mason
@@ -53,6 +53,9 @@ return {
     -- return true if you don't want this server to be setup with lspconfig
     ---@type table<string, fun(server:string, opts:_.lspconfig.options):boolean?>
     setup = {
+      rust_analyzer = function()
+        return true
+      end,
       -- example to setup with typescript.nvim
       -- tsserver = function(_, opts)
       --   require("typescript").setup({ server = opts })
