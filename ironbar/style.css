@@ -63,6 +63,7 @@
 	margin-right: 3px;
 }
 
+
 #numlock{
 	color: @onedark_fg_50_color;
   font-size: 20px;
@@ -72,6 +73,9 @@
   font-size: 14px;
 }
 
+#battery {
+  font-size: 14px;
+}
 
 .workspaces {
 	border-bottom: 2px solid transparent;
@@ -185,3 +189,4 @@
 	border-bottom: 2px solid @onedark_green_color;
 	border-right: 2px solid @onedark_green_color;
 }
+

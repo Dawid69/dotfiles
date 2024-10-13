@@ -33,3 +33,4 @@ alias nyarlathotep_Off='ssh -t nyarlathotep "sudo poweroff"'
 
 alias cat='bat --paging=never'
 
+alias bm='bashmount'
