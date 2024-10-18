@@ -11,6 +11,13 @@ name = "numlock"
 type = "label"
 label = "{{250: /home/dawid/.config/ironbar/scripts/numlock_azathoth.sh}}"
 
+
+[[end]]
+name = "battery"
+type = "label"
+label = "{{60000: /home/dawid/.config/ironbar/scripts/battery.sh}}"
+
+
 [[end]]
 name = "volume"
 type = "label"
