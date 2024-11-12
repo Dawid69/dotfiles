@@ -9,7 +9,7 @@ format = "%s"
 [[end]]
 name = "numlock"
 type = "label"
-label = "{{250: /home/dawid/.config/ironbar/scripts/numlock_azathoth.sh}}"
+label = "{{250: /home/dawid/.config/ironbar/scripts/numlock.sh}}"
 
 
 [[end]]
