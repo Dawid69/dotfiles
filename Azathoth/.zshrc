@@ -23,10 +23,15 @@ ZSH_ALIAS=/home/dawid/.config/zsh_alias
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT='-c'
 export TERMINAL='wezterm'
+
+export EDITOR='/bin/nvim'
+
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source $ZSH_ALIAS
+
+
 
 # Starship 
 eval "$(starship init zsh)"
