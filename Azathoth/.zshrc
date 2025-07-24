@@ -35,4 +35,5 @@ source $ZSH_ALIAS
 
 # Starship 
 eval "$(starship init zsh)"
+eval "$(atuin init zsh --disable-up-arrow)"
 export PATH=~/.local/bin:"$PATH"

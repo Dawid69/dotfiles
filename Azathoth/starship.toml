@@ -3,9 +3,9 @@
 add_newline = true
 
 [character]
-success_symbol = "[>](bold green)"
-error_symbol = "[x](bold red)"
-vicmd_symbol = "[<](bold green)"
+success_symbol = '[>](bold green)'
+error_symbol = '[x](bold red)'
+# vicmd_symbol = '[<](bold blue)'
 
 [git_commit]
 tag_symbol = " tag "
@@ -19,6 +19,9 @@ deleted = "x"
 
 [cmd_duration]
 show_milliseconds = true
+
+[status]
+disabled = false
 
 
 [c]
