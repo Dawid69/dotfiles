@@ -14,11 +14,9 @@ alias lsa='exa -lahG'
 
 alias yeet="paru -Rns"
 alias wtfis="tldr"
-alias wttr="/home/dawid/Documents/shellFiles/Used/weather.sh"
 alias del="trash put"
 
 # Dir history
-alias dh='dirs -v'
 
 # cd to directory by searching for it 
 alias cdf='cd $(fd . --hidden --type directory -E '.ccache/' -E '.local/' -E '.npm/' -E 'easyeda/' -E '.platformio/' -E '.particle/' -E 'Documents/library/' -E '.lutris/' -E '.mozilla/' -E '.wine/' -E 'Steam/' -E 'STM32Cube/' -E 'Games/' -E '.eclipse/' -E '.arduino15/'  -E '.git/' -E '.rustup/' -E '.cache/' -E '.cargo/' -E 'ncs/' -E '.vscode-oss/'  -E 'target/'| sk --tiebreak=length --prompt="Navigate to directory > " --preview "exa -lah {}")'
@@ -27,10 +25,12 @@ alias cdf='cd $(fd . --hidden --type directory -E '.ccache/' -E '.local/' -E '.n
 alias cdfa='cd $(fd . --hidden --type directory | sk --prompt="Navigate to directory > " --preview "exa -lah {}")'
 
 # find any raspberry pis on the network
-alias find_RPi='arp-scan --localnet --interface wlan0| rg Raspberry'
+alias find_RPi='arp-scan --localnet| rg Raspberry'
 
 alias nyarlathotep_Off='ssh -t nyarlathotep "sudo poweroff"'
 
 alias cat='bat --paging=never'
 
 alias bm='bashmount'
+
+alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock docker.io/wagoodman/dive"

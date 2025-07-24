@@ -1,11 +1,11 @@
 
 [general]
-import = ["/home/dawid/Documents/dotfiles/Dagon/alacritty/theme.toml"]
-
+import = ["/home/dawid/Documents/dotfiles/alacritty/theme.toml"]
 
 [window]
 dynamic_padding = true
 opacity = 0.9
+decorations = "none"
 
 [font]
 normal.family = "Fira code medium"

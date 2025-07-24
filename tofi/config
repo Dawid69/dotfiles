@@ -12,8 +12,10 @@ background-color = #000A
 hide-cursor=true
 history=true
 auto-accept-single=false
-terminal = wezterm -e
-drun-launch = false
+terminal = alacritty
+drun-launch = true
+multi-instance=false
+
 
 # Colors
 selection-color=#61afef
